@@ -87,14 +87,23 @@ header .info-text .scroll::before{
         opacity: 0;
     }
 }
-#image,#features{
+#image {
     text-align: center;
     background-color: #2b2f4b;
     padding: 40px;
-    max-width: 100%; 
-    height: auto; 
+}
 
-} 
+#image .card img {
+    max-width: 100%; /* Set the maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust image size for screens up to 480px wide (typical mobile devices) */
+    #image .card img {
+        max-width: 80%; /* Set a smaller maximum width for smaller screens */
+    }
+}
 
 #about, #features{
     background-color: #2b2f4b;
