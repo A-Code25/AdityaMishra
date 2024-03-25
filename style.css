@@ -91,6 +91,9 @@ header .info-text .scroll::before{
     text-align: center;
     background-color: #2b2f4b;
     padding: 40px;
+    max-width: 100%; 
+    height: auto; 
+
 } 
 
 #about, #features{
